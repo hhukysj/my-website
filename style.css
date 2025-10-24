@@ -350,7 +350,12 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  
+  .projects .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centers items horizontally */
+  }
+
   .project-card {
     margin: 0 auto; /* Centers each card */
   }
