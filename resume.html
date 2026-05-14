@@ -9,104 +9,243 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background: #f8f9fa;
         }
+
+        .resume-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
         .header {
             text-align: center;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 15px;
             margin-bottom: 20px;
         }
+
         .name {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 5px;
         }
+
+        .role {
+            font-size: 16px;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
         .contact-info {
             font-size: 14px;
             color: #666;
         }
+
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
+
         .section-title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             color: #2c3e50;
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
-        .project-item {
             margin-bottom: 15px;
         }
+
+        .summary {
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-box {
+            background: #f4f6f8;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .project-item {
+            margin-bottom: 18px;
+        }
+
         .project-title {
             font-weight: bold;
             color: #2c3e50;
+            font-size: 16px;
         }
+
         .project-description {
             margin-left: 10px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
+
 <body>
-    <div class="header">
-        <div class="name">Luvish Khanna</div>
-        <div class="contact-info">
-            Email: khanna.luvish28@gmail.com | B.Tech IT, Bharati Vidyapeeth College of Engineering, GGSIPU (2028)
+
+    <div class="resume-container">
+
+        <div class="header">
+            <div class="name">Luvish Khanna</div>
+
+            <div class="role">
+                Full-Stack Developer | React | Node.js | Python | SQL
+            </div>
+
+            <div class="contact-info">
+                Email: khanna.luvish28@gmail.com |
+                Bharati Vidyapeeth College of Engineering, GGSIPU |
+                B.Tech IT (2028)
+            </div>
         </div>
+
+        <!-- SUMMARY -->
+
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+
+            <div class="summary">
+                Motivated Information Technology student with hands-on experience in
+                full-stack development, machine learning, and AI fundamentals.
+                Skilled in React.js, Node.js, Python, SQL, and responsive web development.
+                Passionate about building scalable applications and continuously improving
+                through certifications and practical projects.
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+
+            <div class="skills-grid">
+
+                <div class="skill-box">
+                    <strong>Languages:</strong><br>
+                    Python, JavaScript (ES6+), SQL
+                </div>
+
+                <div class="skill-box">
+                    <strong>Frameworks & Libraries:</strong><br>
+                    React.js, Node.js
+                </div>
+
+                <div class="skill-box">
+                    <strong>Web Development:</strong><br>
+                    HTML5, CSS3, Bootstrap, Responsive Design
+                </div>
+
+                <div class="skill-box">
+                    <strong>Database:</strong><br>
+                    MySQL, SQLite
+                </div>
+
+                <div class="skill-box">
+                    <strong>Tools:</strong><br>
+                    Git, VS Code, Postman, Figma
+                </div>
+
+                <div class="skill-box">
+                    <strong>Core Concepts:</strong><br>
+                    DBMS, DSA, Machine Learning
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+
+        <div class="section">
+            <div class="section-title">Projects</div>
+
+            <div class="project-item">
+                <div class="project-title">Portfolio Website</div>
+                <div class="project-description">
+                    Modern responsive personal portfolio using React, animations, and interactive UI components.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">E-Commerce Web App</div>
+                <div class="project-description">
+                    Built a full-stack e-commerce application using Python backend, React frontend, and MySQL database.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Library Management System</div>
+                <div class="project-description">
+                    Python + SQL system for managing inventory, issue-return operations, and reporting.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Interactive Quiz App</div>
+                <div class="project-description">
+                    React + JavaScript quiz app with dynamic scoring and progress tracking.
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">To-Do Web App</div>
+                <div class="project-description">
+                    Full-stack React + Node.js application with authentication and persistent task storage.
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+
+        <div class="section">
+            <div class="section-title">Certifications & Achievements</div>
+
+            <ul>
+                <li>HackerRank Python (Basic) Certification</li>
+                <li>Accenture Developer and Technology Job Simulation</li>
+                <li>Machine Learning for Beginners Certification</li>
+                <li>Introduction to Generative AI Certification</li>
+            </ul>
+        </div>
+
+        <!-- EDUCATION -->
+
+        <div class="section">
+            <div class="section-title">Education</div>
+
+            <div>
+                <strong>B.Tech in Information Technology</strong>
+            </div>
+
+            <div>
+                Bharati Vidyapeeth College of Engineering, GGSIPU University (2028)
+            </div>
+
+            <div style="margin-top:10px;">
+                <strong>Relevant Coursework:</strong>
+                Data Structures & Algorithms, Database Management Systems,
+                Web Development, Software Engineering, Machine Learning
+            </div>
+        </div>
+
     </div>
 
-    <div class="section">
-        <div class="section-title">Technical Skills</div>
-        <div class="skills-grid">
-            <div><strong>Languages:</strong> Python, JavaScript (ES6+), SQL</div>
-            <div><strong>Frameworks & Libraries:</strong> React, Node.js</div>
-            <div><strong>Web Development:</strong> HTML5, CSS3, Bootstrap, Responsive Design</div>
-            <div><strong>Database:</strong> MySQL, SQLite</div>
-            <div><strong>Tools:</strong> Git, VS Code, Figma, Postman</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Projects</div>
-        
-        <div class="project-item">
-            <div class="project-title">Portfolio Website</div>
-            <div class="project-description">Modern, responsive personal portfolio using React, CSS animations</div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">E-commerce Web App</div>
-            <div class="project-description">Full-stack web store with Python backend and React frontend</div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">Library Management System</div>
-            <div class="project-description">Python + SQL to manage book inventory and issue/return functionality</div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">Interactive Quiz App</div>
-            <div class="project-description">React + JS dynamic quiz app with scoring and progress tracking</div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">To-Do Web App</div>
-            <div class="project-description">Full-stack React + Node.js app with user authentication and persistent SQL storage</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div><strong>B.Tech in Information Technology</strong></div>
-        <div>Bharati Vidyapeeth College of Engineering, GGSIPU (2028)</div>
-        <div><strong>Relevant Coursework:</strong> Data Structures & Algorithms, DBMS, Web Development, Software Engineering</div>
-    </div>
 </body>
 </html>
